@@ -1,0 +1,237 @@
+.form-card,
+.table-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.form-card h2,
+.table-card h2 {
+  margin-top: 0;
+}
+
+/* Transaction Form */
+
+.transaction-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-actions {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+
+.secondary-button {
+  background: #6b7280;
+}
+
+.danger-button {
+  background: #dc2626;
+}
+
+.error-message {
+  color: #dc2626;
+  margin-bottom: 15px;
+}
+
+/* Table Header */
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+/* Badges */
+
+.category-badge,
+.income-badge,
+.expense-badge {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.category-badge {
+  background: #f3f4f6;
+}
+
+.income-badge {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.expense-badge {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Empty State */
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.empty-state p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.empty-state span {
+  color: #6b7280;
+}
+
+/* Transaction Filters */
+
+.transaction-filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr auto;
+  gap: 12px;
+  margin: 20px 0;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.transaction-filters input,
+.transaction-filters select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.transaction-filters input:focus,
+.transaction-filters select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.transaction-filters .secondary-button {
+  white-space: nowrap;
+  padding: 10px 16px;
+}
+
+/* Date Filters */
+
+.filter-date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-date label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.filter-date input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.filter-date input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+/* Filter Button */
+
+.transaction-filters button {
+  align-self: end;
+}
+
+/* Responsive Transaction Form */
+
+@media (max-width: 700px) {
+  .transaction-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Filters */
+
+@media (max-width: 1100px) {
+  .transaction-filters {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .transaction-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .transaction-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .transaction-filters .secondary-button {
+    width: 100%;
+  }
+}
+
+.field-error {
+  display: block;
+  margin-top: 2px;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form-group input:invalid,
+.form-group select:invalid {
+  box-shadow: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+}

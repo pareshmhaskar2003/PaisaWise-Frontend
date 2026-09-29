@@ -1,0 +1,63 @@
+/* 404 Not Found */
+
+.not-found-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.not-found-card {
+  width: 100%;
+  max-width: 560px;
+  padding: 45px 30px;
+  text-align: center;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.not-found-code {
+  margin-bottom: 8px;
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+.not-found-card h1 {
+  margin-bottom: 10px;
+}
+
+.not-found-card p {
+  max-width: 420px;
+  margin: 0 auto 25px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .not-found-card {
+    padding: 35px 20px;
+  }
+
+  .not-found-code {
+    font-size: 58px;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+  }
+
+  .not-found-actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+/* Confirmation Modal */
+
+.confirm-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.confirm-modal {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.confirm-modal-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.confirm-modal h2 {
+  margin-bottom: 10px;
+}
+
+.confirm-modal p {
+  margin: 0 auto 24px;
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.confirm-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.confirm-modal-actions button {
+  min-width: 110px;
+}
+
+.confirm-modal-actions .danger-button {
+  background: #dc2626;
+  color: white;
+  border: none;
+}
+
+.confirm-modal-actions .danger-button:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 500px) {
+  .confirm-modal {
+    padding: 24px 18px;
+  }
+
+  .confirm-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .confirm-modal-actions button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,423 @@
+.insights-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.insight-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.insight-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.insight-icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.insight-label {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.insight-card h2 {
+  margin: 0 0 6px;
+  font-size: 25px;
+}
+
+.insight-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.income-card .insight-icon {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.expense-card .insight-icon {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.savings-card .insight-icon {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.rate-card .insight-icon {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.income-value {
+  color: #16a34a;
+}
+
+.expense-value {
+  color: #dc2626;
+}
+
+.rate-value {
+  color: #2563eb;
+}
+
+/* Highlight cards */
+
+.insights-highlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.insights-highlight-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.highlight-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  border-radius: 11px;
+  font-size: 22px;
+}
+
+.insights-highlight-card span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.insights-highlight-card strong {
+  display: block;
+  color: #111827;
+  font-size: 18px;
+}
+
+.insights-highlight-card p {
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* Main sections */
+
+.insights-card-section {
+  background: #ffffff;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+
+.insights-section-header {
+  margin-bottom: 18px;
+}
+
+.insights-section-header h2 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.insights-section-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.insights-chart {
+  width: 100%;
+  height: 320px;
+}
+
+.insights-empty {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #6b7280;
+}
+
+.insights-empty span {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.insights-empty p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Spending highlight */
+
+.spending-highlight {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.spending-highlight-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #fef3c7;
+  border-radius: 12px;
+  font-size: 24px;
+}
+
+.spending-highlight span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.spending-highlight h3 {
+  margin: 0 0 4px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.spending-highlight strong {
+  color: #dc2626;
+  font-size: 18px;
+}
+
+/* Advice */
+
+.advice-section {
+  border-left: 5px solid #2563eb;
+}
+
+.insights-advice {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  background: #eff6ff;
+  border-radius: 10px;
+}
+
+.advice-icon {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.insights-advice p {
+  margin: 0;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Table */
+
+.insights-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.insights-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.insights-table th {
+  padding: 13px 14px;
+  text-align: left;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.insights-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #374151;
+  font-size: 14px;
+}
+
+.insights-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.insights-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.income-text {
+  color: #16a34a !important;
+  font-weight: 600;
+}
+
+.expense-text {
+  color: #dc2626 !important;
+  font-weight: 600;
+}
+
+/* Loading */
+
+.insights-loading {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.insights-spinner {
+  width: 34px;
+  height: 34px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: insights-spin 0.8s linear infinite;
+}
+
+.insights-loading h2 {
+  margin: 15px 0 5px;
+}
+
+.insights-loading p {
+  margin: 0;
+  color: #6b7280;
+}
+
+@keyframes insights-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error */
+
+.insights-error {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.insights-error-icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.insights-error h2 {
+  margin: 0 0 8px;
+}
+
+.insights-error p {
+  color: #6b7280;
+  margin: 0 0 20px;
+}
+
+.insights-error button {
+  padding: 10px 18px;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .insights-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .insights-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insights-chart {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .insights-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insights-card-section {
+    padding: 18px;
+  }
+
+  .insight-card {
+    padding: 18px;
+  }
+
+  .insights-highlight-card {
+    padding: 16px;
+  }
+
+  .insights-section-header h2 {
+    font-size: 18px;
+  }
+
+  .insights-chart {
+    height: 280px;
+  }
+
+  .spending-highlight {
+    align-items: flex-start;
+  }
+
+  .spending-highlight h3 {
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,134 @@
+/* Profile & Settings */
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.profile-card {
+  min-width: 0;
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.profile-card-header h2 {
+  margin-bottom: 4px;
+}
+
+.profile-avatar,
+.password-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.password-icon {
+  background: #f8fafc;
+  font-size: 21px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.profile-form button[type="submit"] {
+  width: 100%;
+}
+
+.field-help {
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.profile-message {
+  margin-bottom: 18px;
+  padding: 11px 13px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.profile-success {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-right: 48px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px !important;
+  height: 36px;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  color: #64748b !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 16px;
+}
+
+.password-toggle:hover {
+  background: #f1f5f9 !important;
+}
+
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-grid {
+    margin-top: 18px;
+    gap: 18px;
+  }
+
+  .profile-card {
+    padding: 18px;
+  }
+
+  .profile-card-header {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,125 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(246, 184, 92, 0.3), transparent 20rem),
+    linear-gradient(135deg, #eaf4ee 0%, #fff4e7 100%);
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 42px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 24px 70px rgba(22, 58, 53, 0.14);
+}
+
+.auth-brand {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.auth-brand h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #163a35;
+}
+
+.auth-brand p {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.auth-header {
+  margin-bottom: 25px;
+}
+
+.auth-header h2 {
+  margin-bottom: 6px;
+}
+
+.auth-header p {
+  color: #6b7280;
+  margin: 0;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-button {
+  width: 100%;
+  margin-top: 5px;
+  background: #de6b3f;
+  font-weight: 700;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.auth-button:hover {
+  background: #c95831;
+  transform: translateY(-2px);
+}
+
+.auth-footer {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 25px;
+}
+
+.auth-footer a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.success-message {
+  color: #166534;
+  background: #dcfce7;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  .auth-card {
+    padding: 28px 22px;
+  }
+}
+
+.password-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-wrapper input {
+  padding-right: 80px;
+  max-width: none;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 6px 8px;
+  background: transparent;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.password-toggle:hover {
+  background: transparent;
+  opacity: 0.8;
+}
+
+.password-toggle:disabled {
+  background: transparent;
+}
